@@ -1,0 +1,13 @@
+# dsh-compaction-counter bundle patch
+#
+# 这是一个 DSH bundle（宿主插件 + 浏览器插件）的挂载声明。
+# DSH 启动/重组 profile 时会把下面这一行插入 profile 的 Cordis 配置树：
+# 宿主侧注册 `compactionStats` 会话投影，浏览器侧把计数显示到
+# 输入框右下角“上下文占用”指示器的右侧。
+#
+# 安装（二选一）：
+#   dsh plugin --profile <profile> add link:<本目录绝对路径>
+#   或在 DSH 的 Plugins 页面用本地目录安装后启用本 bundle。
+- insert:
+    - id: compaction-counter
+      name: dsh-compaction-counter
