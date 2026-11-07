@@ -36,7 +36,8 @@
 ### 方式 A：DSH 界面（推荐）
 
 1. 打开侧边栏 **Plugins**；
-2. **Add plugin** → 选择本地目录，填入本目录的绝对路径；
+2. **Add plugin** → 选择本地目录，填入本目录的绝对路径；或直接填 Git 地址：
+   `https://github.com/Tech-yon/DSH_context_ziptimes_show`
 3. 安装完成后点 **Enable now**（或在该 bundle 的卡片上打开开关）。
 
 ### 方式 B：命令行
@@ -128,3 +129,7 @@ $env:ELECTRON_RUN_AS_NODE=1
 - DSH `0.2.1-rc.3`（`dsh-manifestVersion: 1`、`dsh.client.platform: "web"`）；
 - 不引入额外运行时依赖；宿主半使用 Cordis 服务 `sessionProjections`（必需）和 `sessionQuery`（可选，用于补扫历史日志）；
 - 客户端入口是手写的 `window.__ModuleLoader__` bundle，只 `require("react")`。
+
+## License
+
+AGPL-3.0-only. See [LICENSE](LICENSE).
